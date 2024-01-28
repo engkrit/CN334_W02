@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
-def ecomerce_index_view(request):
+def ecommerce_index_view(request):
     '''This function render index page of ecommerce views'''
     return HttpResponse('Welcome to 6410742743 Engkrit Suttisuksree views')
 
@@ -14,16 +14,16 @@ def item_view(request, item_id):
     return render(request, 'index.html', context = context_data)
 
 def homepage_view(request):
-    return render(request, 'homepage.html')
+    return HttpResponse('Welcome to Homepage')
 
 def category_view(request):
-    return render(request, 'category.html')
+    return HttpResponse('Welcome to Category page')
 
 def product_view(request):
-    return render(request, 'product.html')
+    return HttpResponse('Welcome to Product page')
 
 def checkout_view(request):
-    return render(request, 'checkout.html')
+    return HttpResponse('Welcome to Checkout page')
 
 def contact_view(request):
-    return render(request, 'contact.html')
+    return HttpResponse('Welcome to Contact page')
